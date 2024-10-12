@@ -42,3 +42,8 @@ doker info
 docker daemon
 
 docker --version
+
+
+ساده‌ترین راه حمایت از من کلیک کردن روی ستاره (⭐) بالای همین صفحه است.
+
+
