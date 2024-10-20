@@ -1,0 +1,12 @@
+git education:
+
+- git --version
+
+- git init
+
+- git status
+
+- git add file.txt
+
+- git diff
+
