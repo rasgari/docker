@@ -9,6 +9,7 @@ docker :
 
 docker image rm -f $(docker images -aq)
 
+docker rmi -f (idimage)
 
 ----  Delete All Containers----
 
