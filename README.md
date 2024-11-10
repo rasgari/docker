@@ -44,6 +44,8 @@ docker daemon
 
 docker --version
 
+systemctl restart docker.service
+
 docker system prune -af: لیست ایمیج غیرفعال داکر را حذف می کند
 
 
