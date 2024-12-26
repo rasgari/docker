@@ -1,0 +1,16 @@
+tips geo server:
+
+1 - docker image download ===>>>
+- geoserver
+- postgis
+- imposm
+- portainer
+
+
+2 - osm-imposm ===>>>
+- mapping.yml
+- config.json
+
+
+3 - download osm.pbf
+- 
