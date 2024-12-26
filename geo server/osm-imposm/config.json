@@ -1,0 +1,7 @@
+{
+    "cachedir": "/imposm-cache",
+    "mapping": "mapping.yml",
+    "connection": "postgis://postgres:password@192.168.0.108:32767/osm",
+    "srid": "4326"
+  }
+  
