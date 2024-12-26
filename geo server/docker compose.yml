@@ -1,0 +1,102 @@
+services:
+   postgis:
+      image: kartoza/postgis:13
+      container_name: postgis
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASS=password
+        - POSTGRES_DB=gis
+        - ALLOW_IP_RANGE=0.0.0.0/0
+        - PASSWORD_AUTHENTICATION=md5
+      ports:
+        - "5432:5432"
+        - "2222:22"
+      expose:
+        - "5432"
+      volumes:
+        - ./app-data/osm-postgis-data:/var/lib/postgresql
+        - ./app-data/osm-postgis-data/data:/home/settings
+      restart: on-failure
+      healthcheck:
+        test: "PGPASSWORD=${POSTGRES_PASS} pg_isready -h 127.0.0.1 -U ${POSTGRES_USER} -d ${POSTGRES_DB}"
+        interval: 40s
+        timeout: 10s
+        retries: 5
+      command: ["postgres", "-c", "log_statement=all", "-c", "log_connections=on", "-c", "log_disconncetions=on"]
+      networks:
+        - app-test
+
+        
+   geoserver:
+      image: kartoza/geoserver:${GS_VERSION}
+      container_name: geoserver
+      volumes:
+        - ./geoserver-data:/opt/geoserver/data_dir
+      ports:
+        - ${GEOSERVER_PORT}:8080
+        - ${HTTPS_PORT}:${HTTPS_PORT}
+      restart: on-failure
+      environment:
+        - GEOSERVER_DATA_DIR=${GEOSERVER_DATA_DIR}
+        - GEOWEBCACHE_CACHE_DIR=${GEOWEBCACHE_CACHE_DIR}
+        - GEOSERVER_ADMIN_PASSWORD=${GEOSERVER_ADMIN_PASSWORD}
+        - GEOSERVER_ADMIN_USER=${GEOSERVER_ADMIN_USER}
+        - INITIAL_MEMORY=${INITIAL_MEMORY}
+        - MAXIMUM_MEMORY=${MAXIMUM_MEMORY}
+        - STABLE_EXTENSIONS=${STABLE_EXTENSIONS}
+        - COMMUNITY_EXTENSIONS=${COMMUNITY_EXTENSIONS}
+        - GEOSERVER_CONTEXT_ROOT=${GEOSERVER_CONTEXT_ROOT}
+        - ROOT_WEBAPP_REDIRECT=true
+        - CONSOLE_HANDLER_LEVEL=${CONSOLE_HANDLER_LEVEL}
+        - SSL=${SSL}
+        - JKS_KEY_PASSWORD=${JKS_KEY_PASSWORD}
+        - JKS_STORE_PASSWORD=${JKS_STORE_PASSWORD}
+        - PKCS12_PASSWORD=${PKCS12_PASSWORD}
+        - HTTPS_PORT=${HTTPS_PORT}
+      depends_on:
+        postgis:
+          condition: service_healthy
+      healthcheck:
+        test: [ "CMD-SHELL", "curl --fail --silent --write-out 'HTTP CODE : %{http_code}\n' --output /dev/null -u $${GEOSERVER_ADMIN_USER}:$${GEOSERVER_ADMIN_PASSWORD} http://localhost:8080/geoserver/rest/about/version.xml" ]
+        interval: 1m30s
+        timeout: 10s
+        retries: 3
+        start_period: 1m
+      networks:
+        - app-test
+
+   imposm:
+     image: jawg/imposm3
+     container_name: imposm3
+     volumes:
+       - ./app-data/osm-imposm/imposm3:/imposm/imposm3
+       - ./app-data/osm-imposm/tmp:/tmp/imposm3
+       - ./app-data/osm-imposm/config.json:/imposm/config.json
+       - ./app-data/osm-imposm/mapping.yml:/imposm/mapping.yml
+       - ./app-data/osm-imposm/asia-latest-osm.pbf:/imposm/asia-latest-osm.pbf
+     entrypoint: ./imposm3
+     command: import -mapping /imposm/mapping.yml -read /imposm/asia-latest-osm.pbf -appendcache -cachedir /imposm/imposm3 -optimize -write -connection 'postgis://${POSTGRES_USER}:${POSTGRES_PASS}@postgis/osm'
+     stdin_open: true
+     tty: true     
+     depends_on:
+       postgis:
+         condition: service_healthy
+     networks:
+       - app-test
+     restart: "no"
+
+   portainer:
+      image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
+      container_name: portainer
+      ports:
+       - "9000:9000"
+      volumes:
+        - /etc/locatime:/etc/localtime:ro
+        - /var/run/docker.sock:/var/run/docker.sock
+        - ./portainer_data:/data
+      networks:
+        - app-test
+
+networks:
+  app-test:
+    driver: bridge
