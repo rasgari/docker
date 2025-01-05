@@ -7,6 +7,9 @@ https://github.com/kartoza/docker-geoserver/blob/develop/.env
 ===>>> geoserver download
 https://geoserver.org/download/
 
+===>>> install geoserver docker
+https://docs.geoserver.org/stable/en/user/installation/docker.html
+
 ===>>> OpenStreetMap Data Extracts
 https://download.geofabrik.de/
 
