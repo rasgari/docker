@@ -7,62 +7,64 @@ docker :
 ابزارهایی مانند htop، docker stats یا Portainer را برای نظارت بر منابع سرور در زمان اجرا استفاده کنید
 
 دستورات کاربردی داکر
----- run image ----
+
+
+===>>> run image ----
 docker compose up -d
 
----- stop image ----
+===>>> stop image ----
 docker compose down -v
 
-----  Delete All Images  ----
+===>>>  Delete All Images  ----
 docker image rm -f 
 docker rmi -f 
 
-----  Delete All Containers----
+===>>> Delete All Containers----
 docker rm -vf
 
----- image ----
+===>>> image ----
 docker image
 
----- run -----
+===>>> run -----
 docker ps
 
----- run & stop ----
+===>>> run & stop ----
 docker ps -a
 
----- load -----
+===>>> load -----
 docker load -i filename.tar
 
----- pull ----
+===>>> pull ----
 docker pull portainer
 
----- save ----
+===>>> save ----
 docker save -o portainer.tar portainer:portainer-ce
 
----- build ----
+===>>> build ----
 docker build --tag=portainer:portainer-ce . 
 
----- build force-rm -----
+===>>> build force-rm -----
 docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
 
----- disable image -----
+===>>> disable image -----
 docker system prune -af: لیست ایمیج غیرفعال داکر را حذف می کند
 
----- information -----
+===>>> information -----
 doker info
 
----- daemon -----
+===>>> daemon -----
 docker daemon
 
----- version ----
+===>>> version ----
 docker --version
 
----- network ----
+===>>> network ----
 docker network ls
 
-----top -----
+===>>> top -----
 docker top ID
 
----- restart ----
+===>>> restart ----
 systemctl restart docker.service
 
 
