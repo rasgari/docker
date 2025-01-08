@@ -27,29 +27,48 @@ docker compose down -v
 ---- image ----
 docker image
 
+---- run -----
 docker ps
 
+---- load -----
 docker load -i filename.tar
 
+---- pull ----
 docker pull portainer
 
+---- save ----
 docker save -o portainer.tar portainer:portainer-ce
 
+---- build ----
 docker build --tag=portainer:portainer-ce . 
 
+---- build force-rm -----
 docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
 
-ssh root@192.168.0.1
+---- disable image -----
+docker system prune -af: لیست ایمیج غیرفعال داکر را حذف می کند
 
+---- information -----
 doker info
 
+---- daemon -----
 docker daemon
 
+---- version ----
 docker --version
 
+---- network ----
+docker network ls
+
+----top -----
+docker top ID
+
+
+
+---- restart ----
 systemctl restart docker.service
 
-docker system prune -af: لیست ایمیج غیرفعال داکر را حذف می کند
+
 
 
 
