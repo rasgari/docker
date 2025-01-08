@@ -47,7 +47,7 @@ docker build --tag=portainer:portainer-ce .
 docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
 
 ===>>> disable image -----
-docker system prune -af: لیست ایمیج غیرفعال داکر را حذف می کند
+docker system prune -af  : لیست ایمیج غیرفعال داکر را حذف می کند
 
 ===>>> information -----
 doker info
