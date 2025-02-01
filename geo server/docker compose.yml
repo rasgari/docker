@@ -5,7 +5,7 @@ services:
       environment:
         - POSTGRES_USER=postgres
         - POSTGRES_PASS=password
-        - POSTGRES_DB=gis
+        - POSTGRES_DB=osm
         - ALLOW_IP_RANGE=0.0.0.0/0
         - PASSWORD_AUTHENTICATION=md5
       ports:
