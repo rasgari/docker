@@ -1,0 +1,6 @@
+CI-CD:
+
+monitoring:
+- prometheus
+- grafana
+- ELK stack ( elasticsearch, logstash, kibana )
