@@ -37,6 +37,9 @@ docker load -i filename.tar
 ===>>> pull ----
 docker pull portainer
 
+===>>> log ----
+docker logs -f <name container>
+
 ===>>> save ----
 docker save -o portainer.tar portainer:portainer-ce
 
