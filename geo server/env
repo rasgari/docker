@@ -109,7 +109,7 @@ EMBEDDED_BROKER=enabled
 # #####################
 # Generic Env variables
 # #####################
-GEOSERVER_PORT=80
+GEOSERVER_PORT=8080
 # Show the tomcat manager in the browser
 TOMCAT_EXTRAS=true
 # Redirect to GeoServer web interface
