@@ -67,6 +67,9 @@ docker network ls
 ===>>> top -----
 docker top ID
 
+===>>> volume ----
+docker volume rm
+
 ===>>> restart ----
 systemctl restart docker.service
 docker compose restart geoserver
