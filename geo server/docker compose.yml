@@ -86,7 +86,7 @@ services:
      restart: "no"
 
    portainer:
-      image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
+      image: portainer/portainer-ce:2.14.1-alpine
       container_name: portainer
       ports:
        - "9000:9000"
