@@ -1,9 +1,8 @@
-CI-CD:
+# CI-CD:
 
-Developer Roadmaps
-https://roadmap.sh/devops/projects
+[ Developer Roadmaps ](https://roadmap.sh/devops/projects)
 
-monitoring:
+## monitoring:
 - prometheus
 - grafana
 - ELK stack ( elasticsearch, logstash, kibana )
