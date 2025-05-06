@@ -2,10 +2,10 @@
 
 صفحه در حال به روز رسانی می باشد
 
-https://docs.docker.com/engine/install/
+[ docker](https://docs.docker.com/engine/install/)
 
 
-docker :
+## docker :
 
 مانیتورینگ عملکرد
 ابزارهایی مانند htop، docker stats یا Portainer را برای نظارت بر منابع سرور در زمان اجرا استفاده کنید
@@ -14,69 +14,116 @@ docker :
 
 
 ===>>> run image ----
+```bash
 docker compose up -d
+```
 
 ===>>> stop image ----
+```bash
 docker compose down -v
+```
 
 ===>>>  Delete All Images  ----
-docker image rm -f 
+```bash
+docker image rm -f
+```
+
+```bash
 docker rmi -f 
+```
 
 ===>>> Delete All Containers----
+```bash
 docker rm -vf
+```
 
 ===>>> image ----
+```bash
 docker image
+```
 
 ===>>> run -----
+```bash
 docker ps
+```
 
 ===>>> run & stop ----
+```bash
 docker ps -a
+```
 
 ===>>> load -----
+```bash
 docker load -i filename.tar
+```
 
 ===>>> pull ----
+```bash
 docker pull portainer
+```
 
 ===>>> log ----
+```bash
 docker logs -f <name container>
+```
 
 ===>>> save ----
+```bash
 docker save -o portainer.tar portainer:portainer-ce
+```
 
 ===>>> build ----
+```bash
 docker build --tag=portainer:portainer-ce . 
+```
 
 ===>>> build force-rm -----
+```bash
 docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
+```
 
 ===>>> disable image -----
+```bash
 docker system prune -af  : لیست ایمیج غیرفعال داکر را حذف می کند
+```
 
 ===>>> information -----
+```bash
 doker info
+```
 
 ===>>> daemon -----
+```bash
 docker daemon
+```
 
 ===>>> version ----
+```bash
 docker --version
+```
 
 ===>>> network ----
+```bash
 docker network ls
+```
 
 ===>>> top -----
+```bash
 docker top ID
+```
 
 ===>>> volume ----
+```bash
 docker volume rm
+```
 
 ===>>> restart ----
+```bash
 systemctl restart docker.service
-docker compose restart geoserver
+```
 
+```bash
+docker compose restart geoserver
+```
 
 ساده‌ترین راه حمایت از من کلیک کردن روی ستاره (⭐) بالای همین صفحه است.
