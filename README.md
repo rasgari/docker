@@ -126,4 +126,11 @@ systemctl restart docker.service
 docker compose restart geoserver
 ```
 
+## Docker Proxy Mirror
+
+[ focker ](https://focker.ir/)
+
+```bash
+docker pull focker.ir/nginx
+```
 ساده‌ترین راه حمایت از من کلیک کردن روی ستاره (⭐) بالای همین صفحه است.
