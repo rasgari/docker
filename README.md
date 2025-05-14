@@ -133,4 +133,11 @@ docker compose restart geoserver
 ```bash
 docker pull focker.ir/nginx
 ```
+
+پیکربندی دائمی: می‌توانید focker.ir را به عنوان registry mirror در فایل پیکربندی داکر (/etc/docker/daemon.json) اضافه کنید تا همه pullها به صورت خودکار از این میرور انجام شود:
+
+```bash
+"registry-mirrors": ["https://focker.ir"]
+```
+
 ساده‌ترین راه حمایت از من کلیک کردن روی ستاره (⭐) بالای همین صفحه است.
