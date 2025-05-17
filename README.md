@@ -130,6 +130,14 @@ docker compose restart geoserver
 
 [ focker ](https://focker.ir/)
 
+** Modify Kubernetes Deployment Files**
+Similar to docker-compose, you can modify Kubernetes deployment files:
+
+Linux:
+```bash
+sed -i 's/^\s*image:\s*/&focker.ir\//g' deployment.yml
+```
+
 ```bash
 docker pull focker.ir/nginx
 ```
