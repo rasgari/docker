@@ -139,7 +139,7 @@ Linux:
 sed -i 's/^\s*image:\s*/&focker.ir\//g' docker-compose.yml
 ```
 
-** Modify Kubernetes Deployment Files**
+**Modify Kubernetes Deployment Files**
 Similar to docker-compose, you can modify Kubernetes deployment files:
 
 Linux:
