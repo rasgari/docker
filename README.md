@@ -130,6 +130,15 @@ docker compose restart geoserver
 
 [ focker ](https://focker.ir/)
 
+
+**Modify Docker Compose Files**
+You can quickly modify existing docker-compose files to use Focker.ir mirror:
+
+Linux:
+```bash
+sed -i 's/^\s*image:\s*/&focker.ir\//g' docker-compose.yml
+```
+
 ** Modify Kubernetes Deployment Files**
 Similar to docker-compose, you can modify Kubernetes deployment files:
 
