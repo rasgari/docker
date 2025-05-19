@@ -2,7 +2,7 @@
 
 ===>>> Security vulnerabilities in Docker images
 ```bash
-docker scout quickview
+docker scout quickview [image]
 ```
 
 ===>>> Display the list of identified vulnerabilities
