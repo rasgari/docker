@@ -13,111 +13,111 @@
 دستورات کاربردی داکر
 
 
-===>>> run image ----
+===>>> run image 
 ```bash
 docker compose up -d
 ```
 
-===>>> stop image ----
+===>>> stop image 
 ```bash
 docker compose down -v
 ```
 
-===>>>  Delete All Images  ----
+===>>>  Delete All Images  
 ```bash
 docker image rm -f
 ```
-
+&
 ```bash
 docker rmi -f 
 ```
 
-===>>> Delete All Containers----
+===>>> Delete All Containers 
 ```bash
 docker rm -vf
 ```
 
-===>>> image ----
+===>>> image 
 ```bash
 docker image
 ```
 
-===>>> run -----
+===>>> run
 ```bash
 docker ps
 ```
 
-===>>> run & stop ----
+===>>> run & stop
 ```bash
 docker ps -a
 ```
 
-===>>> load -----
+===>>> load
 ```bash
 docker load -i filename.tar
 ```
 
-===>>> pull ----
+===>>> pull
 ```bash
 docker pull portainer
 ```
 
-===>>> log ----
+===>>> log
 ```bash
 docker logs -f <name container>
 ```
 
-===>>> save ----
+===>>> save
 ```bash
 docker save -o portainer.tar portainer:portainer-ce
 ```
 
-===>>> build ----
+===>>> build
 ```bash
 docker build --tag=portainer:portainer-ce . 
 ```
 
-===>>> build force-rm -----
+===>>> build force-rm
 ```bash
 docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
 ```
 
-===>>> disable image -----
+===>>> disable image
 ```bash
 docker system prune -af  : لیست ایمیج غیرفعال داکر را حذف می کند
 ```
 
-===>>> information -----
+===>>> information
 ```bash
 doker info
 ```
 
-===>>> daemon -----
+===>>> daemon
 ```bash
 docker daemon
 ```
 
-===>>> version ----
+===>>> version
 ```bash
 docker --version
 ```
 
-===>>> network ----
+===>>> network
 ```bash
 docker network ls
 ```
 
-===>>> top -----
+===>>> top
 ```bash
 docker top ID
 ```
 
-===>>> volume ----
+===>>> volume
 ```bash
 docker volume rm
 ```
 
-===>>> restart ----
+===>>> restart
 ```bash
 systemctl restart docker.service
 ```
@@ -127,9 +127,8 @@ docker compose restart geoserver
 ```
 
 ===>>> Security vulnerabilities in Docker images
-
 ```bash
-docker scout
+docker scout 
 ```
 
 for example
