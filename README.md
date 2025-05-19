@@ -133,6 +133,7 @@ docker scout
 ```
 
 for example
+
 **docker scout quickview nginx**
 
 
