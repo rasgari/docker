@@ -132,6 +132,9 @@ docker compose restart geoserver
 docker scout
 ```
 
+for example
+** docker scout quickview nginx**
+
 ## Docker Proxy Mirror
 
 [ focker ](https://focker.ir/)
