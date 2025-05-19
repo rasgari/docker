@@ -133,8 +133,7 @@ docker scout
 ```
 
 for example
-
-** docker scout quickview nginx**
+**docker scout quickview nginx**
 
 
 ## Docker Proxy Mirror
