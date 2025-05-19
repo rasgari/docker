@@ -126,7 +126,7 @@ systemctl restart docker.service
 docker compose restart geoserver
 ```
 
-===>>> scout
+===>>> Security vulnerabilities in Docker images
 
 ```bash
 docker scout
