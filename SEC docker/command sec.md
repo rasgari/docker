@@ -28,3 +28,11 @@ docker scout sbom
 for example
 
 **docker scout quickview nginx**
+
+====================================================
+
+# scout cli
+
+[ scout cli ](https://github.com/docker/scout-cli/releases)
+
+====================================================
