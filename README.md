@@ -121,9 +121,15 @@ docker volume rm
 ```bash
 systemctl restart docker.service
 ```
-
+&
 ```bash
 docker compose restart geoserver
+```
+
+===>>> scout
+
+```bash
+docker scout
 ```
 
 ## Docker Proxy Mirror
