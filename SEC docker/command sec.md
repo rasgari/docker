@@ -33,6 +33,7 @@ for example
 
 # scout cli
 
+refrence scout cli
 [ scout cli ](https://github.com/docker/scout-cli/releases)
 
 ====================================================
