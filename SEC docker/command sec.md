@@ -124,3 +124,11 @@ Show Docker Scout version information
 docker scout watch
 ```
 Watch repositories in a registry and push images and indexes to Docker Scout (experimental)
+
+====================================================
+
+## install offline docker scout
+
+```bash
+export DOCKER_SCOUT_OFFLINE=true
+```
