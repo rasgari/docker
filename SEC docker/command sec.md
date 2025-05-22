@@ -127,8 +127,14 @@ Watch repositories in a registry and push images and indexes to Docker Scout (ex
 
 ====================================================
 
+
 ## install offline docker scout
 
 ```bash
 export DOCKER_SCOUT_OFFLINE=true
 ```
+
+```bash
+docker scout analyze <image>
+```
+====================================================
