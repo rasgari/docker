@@ -14,7 +14,7 @@ using SSO. Learn more at https://docs.docker.com/go/access-tokens/
 You can also log in using Docker Desktop.
 
 
-===>>> solution
+===>>> # solution
 
 این پیام نشان‌دهنده چند نکته مهم درباره استفاده از Docker Scout است:
 
@@ -67,3 +67,71 @@ https://docs.docker.com/go/access-tokens/
 ===================================================
 
 # Error 2:
+
+This image couldn't be analyzed
+It may have an unsupported architecture, or exceed the maximum size
+
+
+===>>> # solution
+پیام "This image couldn't be analyzed. It may have an unsupported architecture, or exceed the maximum size" به این معنی است که Docker Scout نتوانسته ایمیج شما را بررسی کند. این مشکل معمولاً به یکی از دو دلیل زیر رخ می‌دهد:
+
+۱. معماری (Architecture) ناسازگار
+اگر معماری ایمیج (مثلاً amd64، arm64) با معماری سیستم شما یا با معماری‌هایی که Docker Scout پشتیبانی می‌کند، سازگار نباشد، آنالیز انجام نمی‌شود.
+
+این مشکل به ویژه زمانی پیش می‌آید که مثلاً ایمیج فقط برای arm64 ساخته شده و شما روی سیستم amd64 یا بالعکس کار می‌کنید.
+
+راه‌حل:
+
+با دستور زیر معماری ایمیج را بررسی کنید:
+
+bash
+docker image inspect <image-name>
+دنبال مقدار "Architecture" بگردید و مطمئن شوید با سیستم شما و با معماری‌های پشتیبانی‌شده توسط Docker Scout سازگار است.
+
+اگر لازم است، ایمیج را با چند معماری (multi-arch) بسازید:
+
+bash
+docker buildx build --platform linux/amd64,linux/arm64 -t <image-name> --push .
+۲. حجم زیاد ایمیج
+Docker Scout و Docker Desktop فقط ایمیج‌هایی با حجم حداکثر ۱۰ گیگابایت (uncompressed) را به صورت پیش‌فرض آنالیز می‌کنند. اگر حجم ایمیج بیشتر از این مقدار باشد، آنالیز انجام نمی‌شود.
+
+راه‌حل:
+
+حجم ایمیج را با دستور زیر بررسی کنید:
+
+bash
+docker image inspect <image-name>
+دنبال مقدار "Size" بگردید.
+
+اگر ایمیج بزرگ‌تر از ۱۰ گیگابایت است:
+
+سعی کنید ایمیج را کوچک‌تر کنید (پاک کردن فایل‌های غیرضروری، کاهش تعداد لایه‌ها و ...).
+
+یا ایمیج را با SBOM attestation بسازید که محدودیت حجم را برمی‌دارد:
+
+bash
+docker build --provenance=true --sbom=true -t <image-name> .
+سپس ایمیج را push و دوباره آنالیز کنید.
+
+۳. سایر راه‌حل‌ها و نکات
+اگر Docker Desktop یا Scout مدتی درست کار می‌کرده و ناگهان همه ایمیج‌ها را آنالیز نمی‌کند، ممکن است باگ یا مشکل کش باشد.
+راه‌حل موقت: حذف و نصب مجدد Docker Desktop می‌تواند مشکل را رفع کند.
+
+مطمئن شوید با حساب Docker خود لاگین کرده‌اید و اینترنت دارید.
+
+اگر باز هم مشکل حل نشد، ایمیج را در یک ریپازیتوری جدید push و آنالیز را از طریق داشبورد Docker Scout انجام دهید.
+
+جمع‌بندی سریع راه‌حل‌ها
+معماری ایمیج را با سیستم و پشتیبانی Scout چک کنید و در صورت نیاز ایمیج multi-arch بسازید.
+
+حجم ایمیج را بررسی و در صورت نیاز کوچک کنید یا با SBOM attestation بسازید.
+
+اگر مشکل سراسری است، Docker Desktop را حذف و دوباره نصب کنید.
+
+مطمئن شوید لاگین هستید و اینترنت دارید.
+
+اگر هنوز مشکل داری، خروجی دستور
+
+bash
+docker image inspect <image-name>
+را بفرست تا دقیق‌تر راهنمایی کنم.
