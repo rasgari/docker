@@ -4,6 +4,8 @@
 
 ===>>> version 1.18.1
 
+[ download docker scout ](https://github.com/docker/scout-cli/releases/tag/v1.18.1)
+
 ====================================================================
 
 
