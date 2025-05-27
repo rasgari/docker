@@ -14,7 +14,7 @@ using SSO. Learn more at https://docs.docker.com/go/access-tokens/
 You can also log in using Docker Desktop.
 
 
-===>>> # solution
+## solution
 
 این پیام نشان‌دهنده چند نکته مهم درباره استفاده از Docker Scout است:
 
@@ -72,7 +72,7 @@ This image couldn't be analyzed
 It may have an unsupported architecture, or exceed the maximum size
 
 
-===>>> # solution
+## solution
 پیام "This image couldn't be analyzed. It may have an unsupported architecture, or exceed the maximum size" به این معنی است که Docker Scout نتوانسته ایمیج شما را بررسی کند. این مشکل معمولاً به یکی از دو دلیل زیر رخ می‌دهد:
 
 ۱. معماری (Architecture) ناسازگار
