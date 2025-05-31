@@ -117,6 +117,13 @@ docker top ID
 docker volume rm
 ```
 
+===>>> space full  ===>>> LINUX UI ===>>> disk usage analyzer
+```bash
+sudo find /home -type f size +100M -exec ls -lh {} \;
+```
+
+
+
 ===>>> restart
 ```bash
 systemctl restart docker.service
