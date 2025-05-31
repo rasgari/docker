@@ -122,7 +122,10 @@ docker volume rm
 sudo find /home -type f size +100M -exec ls -lh {} \;
 ```
 
-
+===>>> size
+```bash
+df -h
+```
 
 ===>>> restart
 ```bash
