@@ -92,6 +92,11 @@ docker system prune -af  : لیست ایمیج غیرفعال داکر را حذ
 systemctl date
 ```
 
+===>>> timedatectl
+```bash
+sudo timedatectl set-ntp
+```
+
 ===>>> information
 ```bash
 doker info
