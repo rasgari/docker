@@ -87,6 +87,11 @@ docker build --force-rm=true --no-cache --tag=portainer:portainer-ce
 docker system prune -af  : لیست ایمیج غیرفعال داکر را حذف می کند
 ```
 
+===>>> date
+```bash
+systemctl date
+```
+
 ===>>> information
 ```bash
 doker info
