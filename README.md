@@ -175,6 +175,25 @@ for example
 
 **docker scout quickview nginx**
 
+## docker range IP
+
+===>>> file ( daemon.json ) ===>>> 
+```bash
+sudo nano /etc/docker/daemon.json
+```
+
+===>>> after line live
+
+```bash
+"bip": "65.65.65.1/24"
+```
+
+===>>> after save
+
+```bash
+systemctl restart docker.service
+```
+
 
 ## Docker Proxy Mirror
 
