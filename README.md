@@ -220,6 +220,14 @@ sed -i 's/^\s*image:\s*/&focker.ir\//g' deployment.yml
 docker pull focker.ir/nginx
 ```
 
+
+=======================================================================
+
+## docker 
+process contianer
+
+OS container ===>>>LCI
+
 پیکربندی دائمی: می‌توانید focker.ir را به عنوان registry mirror در فایل پیکربندی داکر (/etc/docker/daemon.json) اضافه کنید تا همه pullها به صورت خودکار از این میرور انجام شود:
 
 ```bash
