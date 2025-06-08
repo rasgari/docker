@@ -137,6 +137,11 @@ sudo find /home -type f size +100M -exec ls -lh {} \;
 df -h
 ```
 
+===>>> docker resources
+```bash
+docker system df
+```
+
 ===>>> restart
 ```bash
 systemctl restart docker.service
