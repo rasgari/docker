@@ -97,6 +97,11 @@ docker system prune -a --volumes
 docker system events
 ```
 
+===>>> docker information
+```bash
+docker system info
+```
+
 ===>>> date
 ```bash
 systemctl date
