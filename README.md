@@ -165,6 +165,10 @@ systemctl restart docker.service
 ```bash
 docker compose restart geoserver
 ```
+&
+```bash
+sudo systemctl restart docker
+```
 
 ===>>> Security vulnerabilities in Docker images
 ```bash
