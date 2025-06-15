@@ -170,6 +170,11 @@ docker compose restart geoserver
 sudo systemctl restart docker
 ```
 
+```bash
+sudo systemctl daemon-reload
+```
+
+
 ===>>> Security vulnerabilities in Docker images
 ```bash
 docker scout quickview
