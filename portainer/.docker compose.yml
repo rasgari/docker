@@ -1,0 +1,15 @@
+   portainer:
+      image: portainer/portainer-ce:latest
+      container_name: portainer
+      ports:
+       - "9000:9000"
+      volumes:
+        - /etc/locatime:/etc/localtime:ro
+        - /var/run/docker.sock:/var/run/docker.sock
+        - ./portainer_data:/data
+      networks:
+        - app-test
+
+networks:
+  app-test:
+    driver: bridge
