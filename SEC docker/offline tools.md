@@ -2,8 +2,8 @@
 
 > - [ trivy](#trivy)
 > - [ clair](#clair)
-> - [ docker bench for security ](#docker bench for security)
-> - [ Sysdig Secure ](#Sysdig Secure)
+> - [ docker bench for security ](#docker_bench_for_security)
+> - [ Sysdig Secure ](#Sysdig_Secure)
 
 
 
