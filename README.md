@@ -46,6 +46,11 @@ docker image
 ```bash
 docker ps
 ```
+&
+===>>> run
+```bash
+docker ps --all
+```
 
 ===>>> run & stop
 ```bash
@@ -96,10 +101,26 @@ docker system prune -a --volumes
 ```bash
 docker system events
 ```
+&
+===>>> docker events
+```bash
+docker system events --filter 'event=stop'
+```
+
 
 ===>>> docker information
 ```bash
 docker system info
+```
+
+===>>> docker df
+```bash
+docker system df
+```
+&
+===>>> docker df -v
+```bash
+docker system df -v
 ```
 
 ===>>> date
