@@ -1,10 +1,9 @@
 # offline tools
 
-
 > - [ trivy](#trivy)
 > - [ clair](#clair)
-> - [docker bench for security](#dockerbenchforsecurity)
-> - [Sysdig Secure](#SysdigSecure)
+> - [ docker bench for security ](#docker bench for security)
+> - [ Sysdig Secure ](#Sysdig Secure)
 
 
 
