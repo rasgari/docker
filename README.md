@@ -284,4 +284,31 @@ OS container ===>>>LCI
 "registry-mirrors": ["https://focker.ir"]
 ```
 
+=======================================================================
+## docker base
+
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+
+
+===>>> docker compose 
+
+```bash
+version: '3'
+services:
+  registry:
+    image: registry:latest
+    container_name: registry
+    ports:
+      - "5000:5000"
+    environment:
+      - REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/data
+    volumes:
+      - ./data:/data
+```
+
+===>>> image registry
+
+```bash 
+docker pull registry
+```
 ساده‌ترین راه حمایت از من کلیک کردن روی ستاره (⭐) بالای همین صفحه است.
