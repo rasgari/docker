@@ -27,6 +27,17 @@ docker compose down -v
 ```bash
 docker compose logs
 ```
+
+===>>>  pull Images  
+```bash
+docker pull
+```
+
+===>>>  push Images  
+```bash
+docker push
+```
+
 ===>>>  Delete All Images  
 ```bash
 docker image rm -f
