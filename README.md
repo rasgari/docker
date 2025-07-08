@@ -23,6 +23,10 @@ docker compose up -d
 docker compose down -v
 ```
 
+===>>> logs image 
+```bash
+docker compose logs
+```
 ===>>>  Delete All Images  
 ```bash
 docker image rm -f
