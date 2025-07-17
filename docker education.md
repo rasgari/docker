@@ -20,3 +20,11 @@ Add-AppxPackage .\Ubuntu.appx
 5-Install Docker Desktop Installer.exe
 
 6- End
+
+=====================================
+
+# cheat sheet
+
+https://t.me/dev_cheatsheet
+
+=====================================
