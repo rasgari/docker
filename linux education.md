@@ -77,4 +77,18 @@ systemctl set-default multi-user.target
 
 mount /dev/sdb1 /mnt
 
+```bash
+pvcreate /dev/sdb1
+vgcreate vgdocker /dev/sdb1
+```
+
+```bash
+lvcreate -n lvdocker -l +100%FREE vgdocker
+```
+
+```bash
+pvscan
+vgscan
+```
+
 ===========================================================
