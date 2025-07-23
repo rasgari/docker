@@ -285,6 +285,18 @@ sed -i 's/^\s*image:\s*/&focker.ir\//g' deployment.yml
 docker pull focker.ir/nginx
 ```
 
+model:
+```bash
+docker model ps
+```
+
+```bash
+docker model df
+```
+
+```bash 
+docker model unload
+```
 
 =======================================================================
 
