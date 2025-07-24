@@ -134,6 +134,11 @@ docker scout watch
 ```
 Watch repositories in a registry and push images and indexes to Docker Scout (experimental)
 
+===>>> help scout
+```bash
+docker scout --help
+```
+
 ====================================================
 
 
