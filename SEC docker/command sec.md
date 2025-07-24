@@ -152,3 +152,14 @@ export DOCKER_SCOUT_OFFLINE=true
 docker scout analyze <image>
 ```
 ====================================================
+
+
+Docker Scout : [scout](https://docs.docker.com/scout/) 
+
+Installation Steps: 
+
+```bash
+1. curl -fsSL https://raw.githubusercontent.com/doc... -o install-scout.sh
+
+2. sh install-scout.sh
+```
