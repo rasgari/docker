@@ -1,6 +1,8 @@
 # portainer
 
-https://youtu.be/kNs6wHcmKq4?si=Ve8VeVLDKxEKmj8B
+## link video youtube
+
+[![Watch the video](https://img.youtube.com/vi/kNs6wHcmKq4/0.jpg)](https://www.youtube.com/watch?v=kNs6wHcmKq4)
 
 پورتینر (portainer) یک رابط گرافیکی تحت وب برای docker است که می‌توانید به کمک آن کانتینرها را مدیریت و مانتیورینگ یا نگهداری کنید، در مرورگر با پورت 9000 می‌توانید به پورتینر دسترسی پیدا کنید؛
 
