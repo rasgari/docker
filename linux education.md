@@ -92,3 +92,15 @@ vgscan
 ```
 
 ===========================================================
+
+## firewall
+
+```
+sudo firewall-cmd --zone=public --add-port=9200/tcp --permanent
+sudo firewall-cmd --zone=public --remove-port=9200/tcp --permanent
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-ports
+```
+
+===========================================================
+
