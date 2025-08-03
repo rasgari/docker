@@ -18,6 +18,10 @@
 docker compose up -d
 ```
 
+```bash
+docker compose up -d -f
+```
+
 ```
 docker run <image>:<tag>
 docker run -it <image>:<tag>
@@ -190,6 +194,42 @@ docker top ID
 ===>>> volume
 ```bash
 docker volume rm
+```
+
+```bash
+docker volume ls
+```
+
+```bash
+docker volume create <volume>
+```
+
+```bash
+docker volume rm <volume>
+```
+
+```bash
+docker volume inspect <volume>
+```
+
+```bash
+docker volume prune <volume>
+```
+
+```bash
+docker run -v
+```
+
+```bash
+docker run -d -p 127.0.0.1
+```
+
+```bash
+docker port <container>
+```
+
+```bash
+docker cp
 ```
 
 ===>>> space full  ===>>> LINUX UI ===>>> disk usage analyzer
