@@ -49,6 +49,23 @@ docker search <image>
 docker login <repository>
 ```
 
+```bash
+docker compose up -d -f
+```
+
+
+```bash
+docker stats
+```
+
+```bash
+docker diff
+```
+
+```bash
+docker attach <container>
+```
+
 ===>>> logs image 
 ```bash
 docker compose logs
@@ -110,7 +127,17 @@ docker pull portainer
 
 ===>>> log
 ```bash
+docker logs <container>
+```
+
+===>>> log
+```bash
 docker logs -f <name container>
+```
+
+===>>> log
+```bash
+docker logs -t <name container>
 ```
 
 ===>>> save
