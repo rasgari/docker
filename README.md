@@ -41,6 +41,14 @@ docker stop <container>
 docker kill <container>
 ```
 
+```bash
+docker search <image>
+```
+
+```bash
+docker login <repository>
+```
+
 ===>>> logs image 
 ```bash
 docker compose logs
@@ -213,7 +221,15 @@ docker volume inspect <volume>
 ```
 
 ```bash
+docker inspect <image>
+```
+
+```bash
 docker volume prune <volume>
+```
+
+```bash
+docker image prune 
 ```
 
 ```bash
