@@ -29,6 +29,14 @@ docker run -d <image>:<tag>
 docker compose down -v
 ```
 
+```bash
+docker stop <container>
+```
+
+```bash
+docker kill <container>
+```
+
 ===>>> logs image 
 ```bash
 docker compose logs
