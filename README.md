@@ -18,6 +18,12 @@
 docker compose up -d
 ```
 
+```
+docker run <image>:<tag>
+docker run -it <image>:<tag>
+docker run -d <image>:<tag>
+```
+
 ===>>> stop image 
 ```bash
 docker compose down -v
@@ -332,7 +338,10 @@ OS container ===>>>LCI
 =======================================================================
 ## docker base
 
+```
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```
+
 
 
 ===>>> docker compose 
