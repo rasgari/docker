@@ -221,6 +221,10 @@ docker --version
 docker network ls
 ```
 
+```bash
+docker network prune
+```
+
 ===>>> top
 ```bash
 docker top ID
