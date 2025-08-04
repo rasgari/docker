@@ -90,9 +90,11 @@ docker image rm -f
 docker rmi -f 
 ```
 
+
+
 ===>>> Delete All Containers 
 ```bash
-docker rm -vf
+docker rm -vf $(docker ps -aq)
 ```
 
 ===>>> image 
