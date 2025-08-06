@@ -3,7 +3,9 @@
 file /etc/docker/daemon.json
 1 ===>>> 
 
-```sudo nano /etc/docker/daemon.json```
+```
+sudo nano /etc/docker/daemon.json
+```
 
 
 2 ===>>>
@@ -18,12 +20,18 @@ file /etc/docker/daemon.json
 
 3 ===>>>
 
-```sudo systemctl restart docker.service```
+```
+sudo systemctl restart docker.service
+```
 
 4 ===>>>
 
-```sudo systemctl daemon-reload```
+```
+sudo systemctl daemon-reload
+```
 
 5 ===>>>
 
-```reboot```
+```
+reboot
+```
