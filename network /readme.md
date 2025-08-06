@@ -1,6 +1,8 @@
 # docker network
 
 file /etc/docker/daemon.json
+
+
 1 ===>>> sudo nano /etc/docker/daemon.json
 
 
@@ -15,3 +17,6 @@ file /etc/docker/daemon.json
 
 3 ===>>> sudo systemctl restart docker
 
+4 ===>>> sudo systemctl daemon-reload
+
+5 ===>>> reboot
