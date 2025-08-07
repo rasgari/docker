@@ -48,3 +48,14 @@ sudo systemctl daemon-reload
 ```
 reboot
 ```
+
+
+============================================
+
+## ERROR
+
+error docker.service
+
+```
+sudo journalctl -u docker.service
+```
