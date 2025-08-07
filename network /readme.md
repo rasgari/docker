@@ -29,6 +29,13 @@ sudo nano /etc/docker/daemon.json
 ```
 sudo systemctl restart docker.service
 ```
+&
+
+```
+sudo systemctl stop docker.service
+sudo systemctl start docker.service
+sudo systemctl status docker.service
+```
 
 4 ===>>>
 
