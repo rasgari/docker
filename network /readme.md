@@ -59,3 +59,7 @@ error docker.service
 ```
 sudo journalctl -u docker.service
 ```
+&
+```
+sudo journalctl -xe
+```
