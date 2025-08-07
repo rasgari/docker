@@ -14,9 +14,15 @@ sudo nano /etc/docker/daemon.json
   "default-address-pools": [
     {"base":"172.80.0.0/16","size":24},
     {"base":"172.90.0.0/16","size":24}
-  ]
+  ],
+  "dns": ["127.0.0.1"],
+  "insecure-registries":["http://127.0.0.1"],
+  "registry-mirrors":["http://127.0.0.1"]
 }
 ```
+
+
+
 
 3 ===>>>
 
