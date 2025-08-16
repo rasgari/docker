@@ -104,3 +104,8 @@ sudo firewall-cmd --list-ports
 
 ===========================================================
 
+## connection:
+
+```
+nc [ipaddress] [port]
+```
