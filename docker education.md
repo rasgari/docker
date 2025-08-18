@@ -23,8 +23,18 @@ Add-AppxPackage .\Ubuntu.appx
 
 =====================================
 
+## later install
+
+```
+wsl --update
+```
+
+=====================================
+
 # cheat sheet
 
 https://t.me/dev_cheatsheet
 
 =====================================
+
+
