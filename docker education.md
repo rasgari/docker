@@ -23,7 +23,7 @@ Add-AppxPackage .\Ubuntu.appx
 
 =====================================
 
-## later install
+## after installing docker
 
 ```
 wsl --update
