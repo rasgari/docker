@@ -41,3 +41,9 @@ docker network prune
 ```
 sudo systemctl daemon-reload
 ```
+
+
+شبکه داخل ESXI
+```
+nmtui
+```
