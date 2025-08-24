@@ -5,6 +5,9 @@
 [ docker doc ](https://docs.docker.com/engine/install/)
 
 
+===>>> docker desktop version 4.44.2
+[docker desktop](https://docs.docker.com/desktop/setup/install/windows-install/)
+
 ## docker :
 
 مانیتورینگ عملکرد
