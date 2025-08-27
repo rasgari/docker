@@ -71,7 +71,7 @@ docker attach <container>
 
 ===>>> logs image 
 ```bash
-docker compose logs
+docker compose logs -f container
 ```
 
 ===>>>  pull Images  
