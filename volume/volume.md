@@ -11,3 +11,25 @@ The latest version is 1.40.11 (released 2/2/2024). The 1.40.11 release adds supp
 Install the downloaded executables in a directory included in your system's PATH.
 
 [ install slimtoolkit ](https://slimtoolkit.org/install)
+
+
+### Container Registry
+
+```
+docker pull dslim/slim
+```
+
+### Package Managers
+
+```
+brew install docker-slim
+```
+
+
+### Update
+
+If you already have SlimToolkit installed use the update command to get the latest version.
+
+```
+slim update
+```
