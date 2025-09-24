@@ -52,6 +52,11 @@ docker search <image>
 docker login <repository>
 ```
 
+===>>> list docker compose running &  stoping
+```bash
+docker compose ls
+```
+
 ```bash
 docker compose up -d -f
 ```
