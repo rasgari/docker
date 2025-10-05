@@ -25,6 +25,10 @@ docker compose up -d
 docker compose up -d -f
 ```
 
+```bash
+docker compose up -d --no-deps (docker images)
+```
+
 ```
 docker run <image>:<tag>
 docker run -it <image>:<tag>
