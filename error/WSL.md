@@ -76,3 +76,8 @@ wsl --unregister docker-desktop-data
 wsl --update
 ```
 
+
+===>>> offline download WSL ===>>> Step 4 - Download the Linux kernel update package 
+```
+https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+```
