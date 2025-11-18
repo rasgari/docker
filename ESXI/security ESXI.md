@@ -93,22 +93,23 @@ grep -i "password" /var/log/hostd.log
 ```
 
 جستجوی IP تغییر‌دهنده:
-
+```
 grep -i "changed" /var/log/hostd.log
-
+```
 
 جستجوی تمام لاگ‌های login:
-
+```
 grep -i "Login" /var/log/hostd.log
-
+```
 
 جستجوی IPهای مشکوک:
-
+```
 grep -Eo "([0-9]{1,3}\.){3}[0-9]{1,3}" /var/log/hostd.log | sort -u
-
+```
 📌 اگر لاگ rotate شده و در hostd.1.gz است:
+```
 zcat /var/log/hostd.1.gz | grep -i "password"
-
+```
 🎯 اگر بخواهی یک ابزار full forensic که اتومات log ESXi را تحلیل کند
 
 بهترین گزینه‌ها:
