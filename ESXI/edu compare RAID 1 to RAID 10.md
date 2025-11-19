@@ -1,4 +1,4 @@
-# edu compare 
+# edu compare RAID 1 to RAID 10 
 
 در سرورهای HP (HPE ProLiant) تفاوت RAID 1 و RAID 10 دقیقاً همان مفاهیم کلاسیک RAID هستند، اما در کنترلرهای HPE Smart Array مزایا/عملکرد آن‌ها کاملاً محسوس است.
 به‌صورت خلاصه:
