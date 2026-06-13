@@ -5,7 +5,7 @@
 [ docker doc ](https://docs.docker.com/engine/install/)
 
 
-===>>> date 11/9/2025 ===>>> docker desktop version 4.50.0  ===
+===>>> date 8/6/2026 ===>>> docker desktop version 4.77.0  ===
 [docker desktop](https://docs.docker.com/desktop/setup/install/windows-install/)
 
 ## docker :
